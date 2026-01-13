@@ -1,5 +1,3 @@
-
-
 # Android build
 .gradle/
 build/
@@ -10,13 +8,16 @@ local.properties
 .cxx/
 .externalNativeBuild/
 
-# Model weights
+# Ignore large model weights (but keep configs)
 *.bin
-*.so
-*.params
-*.json
-*.metal
 *.safetensors
+
+# Keep model configs
+!*.json
+!*.params
+
+# Keep runtime .so files (mlc4j needs them)
+!*.so
 
 # Cache
 .cache/
