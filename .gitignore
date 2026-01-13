@@ -1,0 +1,23 @@
+
+
+# Android build
+.gradle/
+build/
+*/build/
+local.properties
+.idea/
+*.iml
+.cxx/
+.externalNativeBuild/
+
+# Model weights
+*.bin
+*.so
+*.params
+*.json
+*.metal
+*.safetensors
+
+# Cache
+.cache/
+*.log
